@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from codecs import open
 from os import path
 import re
@@ -36,6 +36,6 @@ setup(
     author=author,
     author_email=author_email,
     url=url,
-    packages=[module_name],
+    packages=find_packages(),
     install_requires=_requires_from_file('requirements.txt')
 )
